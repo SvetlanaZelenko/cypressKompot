@@ -1,33 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="2af95c58-b624-4358-acce-0ccc17f41b21" name="Changes" comment="Client Page works (pace holder does not work)">
-      <change afterPath="$PROJECT_DIR$/.idea/cypressKompot.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cypress.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cypress/fixtures/example.json" afterDir="false" />
+    <list default="true" id="2af95c58-b624-4358-acce-0ccc17f41b21" name="Changes" comment="login page, client page added">
       <change afterPath="$PROJECT_DIR$/cypress/integration/client.card.spec.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cypress/integration/client.spec.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cypress/integration/login.spec.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cypress/plugins/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cypress/support/commands.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cypress/support/index.js" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/cypress/support/page.object/client.card.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cypress/support/page.object/client.page.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cypress/support/page.object/estimate.page.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cypress/support/page.object/information.page.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cypress/support/page.object/invoice.page.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cypress/support/page.object/login.page.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cypress/support/page.object/navigationPge.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cypress/support/page.object/orders.page.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cypress/support/page.object/payment.page.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cypress/support/page.object/profile.page.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cypress/support/page.object/schedule.page.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cypress/support/page.object/workers.page.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -126,7 +103,23 @@
       <workItem from="1652231611965" duration="28470000" />
       <workItem from="1652673752076" duration="953000" />
       <workItem from="1652843956167" duration="712000" />
+      <workItem from="1653173526320" duration="5281000" />
     </task>
+    <task id="LOCAL-00001" summary="Client Page">
+      <created>1653172202050</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1653172202050</updated>
+    </task>
+    <task id="LOCAL-00002" summary="login page, client page added">
+      <created>1653177969272</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1653177969272</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -157,6 +150,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Client Page works (pace holder does not work)" />
-    <option name="LAST_COMMIT_MESSAGE" value="Client Page works (pace holder does not work)" />
+    <MESSAGE value="Client Page" />
+    <MESSAGE value="login page, client page added" />
+    <option name="LAST_COMMIT_MESSAGE" value="login page, client page added" />
   </component>
 </project>
