@@ -1,5 +1,5 @@
-//import {navigateTo} from "../support/page.object/navigationPge";
-import NavigationPge from "../support/page.object/navigationPge";
+
+import {navigateTo} from "../support/page.object/navigationPge";
 import LoginPage from "../support/page.object/login.page";
 
 describe('Login successful',() =>{
@@ -17,10 +17,16 @@ describe('Login successful',() =>{
 })
 describe('Base page navbar links', () => {
     it('Base page navbar link', () => {
-        NavigationPge.humburgerDropdownIsopen()
-        NavigationPge.informationPageIsopen()
-        NavigationPge.settingsPageIsopen()
-        NavigationPge.profilePageIsopen()
+        navigateTo.clientPageIsopen()
+        navigateTo.orderPageIsopen()
+        navigateTo.estimatePageIsopen()
+        navigateTo.invoicePageIsopen()
+        navigateTo.paymentPageIsopen()
+        navigateTo.schedulePageIsopen()
+        navigateTo.humburgerDropdownIsopen()
+        navigateTo.informationPageIsopen()
+        navigateTo.settingsPageIsopen()
+        navigateTo.profilePageIsopen()
 
     })
 })

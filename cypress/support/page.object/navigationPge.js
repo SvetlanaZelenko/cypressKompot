@@ -11,7 +11,6 @@ class NavigationPge {
         cy.get('[href="/order"]').click()
         cy.url().should('eq', 'https://kompot.us/order')
         cy.get('[data-qa="page-title"]').should('contain', 'Orders')
-
         cy.get('[type="button"]').should('contain', 'Create Order')
     }
 
@@ -61,8 +60,8 @@ class NavigationPge {
         }
         profilePageIsopen() {
             cy.get('[src="/static/avatar.d73a25e8.svg"]').click()
-            cy.get('[href="/profile/625f5782c09b466637300984"]').should('contain', 'Profile')
-            cy.get('[href="/settings/companyAccount/625f57b8c09b46663730099a"]').should('contain', 'Company Account')
+            cy.get('[data-qa="profile"]').should('contain', 'Profile')
+            cy.get('[data-qa="settings"]').should('contain', 'Company Account')
             cy.get('[class="ant-dropdown-menu-title-content"]').should('contain', 'Logout')
         }
 

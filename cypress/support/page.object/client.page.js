@@ -1,4 +1,3 @@
-//import { client } from "../fixtures/example.json"
 
 class ClientPage {
 

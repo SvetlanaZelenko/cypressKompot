@@ -4,7 +4,6 @@ import LoginPage from "../support/page.object/login.page";
 import { client } from "../fixtures/example.json"
 import clientPage from "../support/page.object/client.page";
 
-// const clientPage = new ClientPage
 
 describe("CLIENT", () => {
     before("Login", () => {
