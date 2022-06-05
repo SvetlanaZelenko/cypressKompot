@@ -1,7 +1,8 @@
 import ClientCard from "../support/page.object/client.card";
 import LoginPage from "../support/page.object/login.page";
 import {navigateTo} from "../support/page.object/navigationPge";
-import ClientPage from "../support/page.object/client.page";
+import {client} from "../fixtures/example.json";
+
 
 
 before("Login", () => {
@@ -12,17 +13,21 @@ before("Login", () => {
     LoginPage.enterPassword().clear()
     LoginPage.enterPassword().type('Inter123')
     LoginPage.submit().click()
-    //cy.visit('https://kompot.us/client/6289317b583218d2b0a2be1d')
+
 })
 beforeEach(() => {
     Cypress.Cookies.preserveOnce('connect.sid', 'user_auth')
 })
 
-describe("Created Client is correct", () => {
+describe("Full Form Card is correct", () => {
     describe("Client List", () => {
-        it("Client List", () => {
+        it("Client  Full Form Is Correct", () => {
             navigateTo.clientPageIsopen()
+           ClientCard.firstNameInTable()
         })
+        // it("Client Full Form Card Is Correct", () => {
+        //     ClientCard.ClientFullFormCard ()
+        // })
         it("Clients Search", () => {
             ClientCard.clientLink()
         })
@@ -30,8 +35,8 @@ describe("Created Client is correct", () => {
             ClientCard.name()
         })
         it('Address', () => {
-           ClientCard.address()
-         })
+            ClientCard.address()
+        })
         it('PhoneNumber', () => {
             ClientCard.phone()
         })
@@ -41,7 +46,13 @@ describe("Created Client is correct", () => {
         it('Company Name', () => {
             ClientCard.companyName()
         })
-    })
+        it('Client Edit Button', () => {
+            ClientCard.clientEditButton()
+         })
+        it('Client Left Dashboard is correct', () => {
+            ClientCard.ClientLeftDashboard()
+        })
+     })
 })
 
 

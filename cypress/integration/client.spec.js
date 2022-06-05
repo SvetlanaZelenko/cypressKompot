@@ -2,7 +2,8 @@ import {navigateTo} from "../support/page.object/navigationPge";
 import ClientPage from "../support/page.object/client.page";
 import LoginPage from "../support/page.object/login.page";
 import { client } from "../fixtures/example.json"
-import clientPage from "../support/page.object/client.page";
+import ClientCard from "../support/page.object/client.card";
+
 
 
 describe("CLIENT", () => {
@@ -42,41 +43,80 @@ describe("CLIENT", () => {
         it('City', () => {
             ClientPage.city()
         })
-            it('State', () => {
-                ClientPage.state()
-            })
-                it('Zip', () => {
-                    ClientPage.zip()
+        it('State', () => {
+            ClientPage.state()
+        })
+        it('Zip', () => {
+            ClientPage.zip()
+        })
+        it('Company Name', () => {
+            ClientPage.companyName()
+        })
+        it('Phone', () => {
+            ClientPage.phone()
+        })
+        it('E-mail', () => {
+            ClientPage.email()
+        })
+        it('SaveBtn', () => {
+            ClientPage.saveBtn().click()
+        })
+        it('cancelBtn', () => {
+            ClientPage.cancelBtn()
+        })
+        it('additionalPnoneNumber', () => {
+            ClientPage.additionalPhoneNumber()
+        })
+        it('additionalInfo', () => {
+            ClientPage.additionalInformation()
+        })
+        it('Client created placeholder is correct ', () => {
+            ClientPage.placeHolderIsCorrect()
+        })
+
+        it('Client created placeholder is correct ', () => {
+          cy.createClientAllData(client.firstName, client.lastName, client.phone, client.address, client.city, client.email, client.companyName, client.zip, client.additionalInformation)
+
+        })
+
+        describe("Full Form Card is correct", () => {
+            describe("Client List", () => {
+                it("ClientCardIsCorrect", () => {
+                    navigateTo.clientPageIsopen()
                 })
+                it("Client Full Form Card Is Correct", () => {
+                    it("Clients Search", () => {
+                        ClientPage.clientLink()
+                    })
+                    it('Name', () => {
+                        ClientPage.name()
+                    })
+                    it('Address', () => {
+                        ClientPage.address()
+                    })
+                    it('PhoneNumber', () => {
+                        ClientPage.phone()
+                    })
+                    it('Email', () => {
+                        ClientPage.email()
+                    })
                     it('Company Name', () => {
                         ClientPage.companyName()
                     })
-
-                    it('Phone', () => {
-                        ClientPage.phone()
-                    })
-                    it('E-mail', () => {
-                        ClientPage.email()
-                    })
-                    it('SaveBtn', () => {
-                        ClientPage.saveBtn().click()
-                    })
-                    it('cancelBtn', () => {
-                        ClientPage.cancelBtn()
-                    })
-                    it('additionalPnoneNumber', () => {
-                        ClientPage.additionalPnoneNumber()
-                    })
-        it('Client create placeholder is correct ', () => {
-            // clientPage.createBtn().click()
-            // clientPage.headerCreateNewClient()
-               clientPage.placeHolderIsCorrect()
-    })
-                    it('Client create placeholder is correct ', () => {
-                        cy.createClientAllData(client.firstName, client.lastName, client.phone, client.address, client.city, client.email, client.companyName, client.zip)
-                    })
-                 })
+                })
             })
+
+            ClientCard.ClientFullFormCard()
+            cy.createClientAllData(client.firstName, client.lastName, client.phone, client.address, client.city, client.email, client.companyName, client.zip)
+
+            it("Client Left Dashboard Is Correct", () => {
+                ClientCard.ClientLeftDashboard()
+            })
+        })
+    })
+})
+
+
 
 
 
